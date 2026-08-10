@@ -1,0 +1,28 @@
+.tip{
+    width: 100%;
+    background-color: #ebebfc;
+    color: #4f4fb9;
+
+    border-radius: 0.62rem;
+    padding: clamp(0.75rem, 3vw, 1rem);
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tip h3{
+    font-size: clamp(1.06rem, 4vw, 1.25rem);
+    font-weight: 700;
+}
+
+.tip p {
+    font-style: 1rem;
+    font-size: clamp(0.87rem, 3vw, 1rem);
+    margin-top: 0.31rem;
+}
+
+.tip > img{
+    height: 2rem;
+    flex-shrink: 0;
+}
