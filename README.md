@@ -4,7 +4,7 @@ Jogo de adivinhação de palavras (estilo "forca") construído em **React + Type
 
 ## 🖼️ Preview
 
-> Adicione aqui um screenshot ou GIF do jogo em funcionamento.
+![Preview do jogo Adivinhe](./screenshot.png)
 
 ## 🚀 Tecnologias
 
