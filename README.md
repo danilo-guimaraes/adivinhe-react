@@ -60,6 +60,14 @@ npm run preview
 
 O projeto estará disponível em `http://localhost:5173`.
 
+## 🚢 Deploy (GitHub Pages)
+
+O deploy é automático via GitHub Actions ([.github/workflows/deploy.yml](.github/workflows/deploy.yml)):
+
+1. A cada push na branch `master`, o workflow instala as dependências, roda `npm run build` e publica o conteúdo de `dist/` no GitHub Pages.
+2. No repositório, em **Settings → Pages**, a opção **Source** precisa estar definida como **GitHub Actions** (necessário apenas na primeira vez).
+3. O `base: './'` em [vite.config.ts](vite.config.ts) faz os caminhos dos arquivos gerados serem relativos, então o site funciona independente do nome do repositório/subpasta em que o Pages publica — não é necessário ajustar nada ao renomear o repositório.
+
 ## 🎮 Como jogar
 
 1. Uma palavra é sorteada automaticamente e uma dica é exibida na tela.
